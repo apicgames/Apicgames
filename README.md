@@ -1,7 +1,27 @@
 # Apicgames
+Patricia Gracia, Alicia Martínez, Carmen Martínez, Irene Sánchez.
 
-Nuestro juego será, en un primer planteamiento, un entorno 2D. Con un concepto de juego similar a Papers, Please (Lucas Pope, 2013) y Reigns (Nerial, 2016), ponemos al jugador en el papel de coorginador de emergencia, concretamente de la pandemia COVID-19, con el objetivo de mantener un equilibrio entre economía, epidemia y bienestar social. 
-Su mecánica principar consistirá en aceptar o rechazar medidas en un tiempo limitado, cuando éste llegue a su fin podrán visualizarse las consecuencias de sus elecciones.
-Dejamos abierta la posibilidad de acción después de dicha visualización.
+EVICTION'T | Gana la batalla pero no la guerra
 
+<!--VISION GENERAL-->
 
+CONCEPTO: En este clicker te pones en la piel de una persona apunto de ser desahuciada. Quedan tres días para que te desahucien. ¿Conseguirás sensibilizar a tu comunidad para retrasar tu desalojo?
+
+GÉNERO: Simulación de vida, clicker
+TEMA: Desahucio contemporáneo
+PLATAFORMAS DE DISTRIBUCIÓN: PC Mac y Windows + dispositivo táctil
+MERCADO (PEGI 7): Público joven (16-35 años), sensibilizados con la causa 
+
+<!--ANÁLISIS COMPETITIVO-->
+
+REFERENTES
+Do not feed the monkeys (VJ), 13 Rue del Percebe (Cómic), Stardew Valley (VJ), Covid go get biscuits adventure (VJ)
+
+COMPETENCIA
+Stop Desahucios (VJ), Do not feed the monkeys (VJ), Among Us (VJ), Paper Cage (VJ)
+
+¿QUÉ NOS DIFERENCIA?
+Escenario: comunidad. Buscamos apoyo, no ganar dinero
+Responsabilidad sobre problemas sociales actuales
+Videojuego como crítica social - sin victoria
+Jugabilidad infinita
