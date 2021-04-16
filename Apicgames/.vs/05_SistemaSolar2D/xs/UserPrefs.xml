@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{7C8F2F88-8D18-AE37-E4D6-C87E42B2AE5F}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MoveClick.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Rotacion.cs" Line="7" Column="12" />
+      <File FileName="Assets/Scripts/Move.cs" Line="24" Column="30" />
+      <File FileName="Assets/Scripts/Size.cs" Line="19" Column="6" />
+      <File FileName="Assets/Scripts/MoveClick.cs" Line="24" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="05_SistemaSolar2D" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="MoveClick.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="ab476d14-287f-4998-a724-3e8712911760" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{8B4D7BE5-096F-607D-8FC1-DE441B19D007}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MoveClick.cs">
+    <Files>
+      <File FileName="Assets/Scripts/MoveClick.cs" Line="26" Column="36" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="100_PruebaVJ" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="MoveClick.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="bdbc5d9a-891c-4468-bfb4-6c8ef804d810" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

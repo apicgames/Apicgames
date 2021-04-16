@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{92FEC762-BF97-FFC0-CD80-3083D6C07621}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CharacterCollision.cs">
+    <Files>
+      <File FileName="Assets/Scripts/ClickManager.cs" Line="23" Column="48" />
+      <File FileName="Assets/Scripts/ClickMovement.cs" Line="23" Column="6" />
+      <File FileName="Assets/Scripts/MinijuegoUI.cs" Line="12" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Apicgames" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="CharacterCollision.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8afff71b-1336-440f-a05f-504cf1d7b114" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
