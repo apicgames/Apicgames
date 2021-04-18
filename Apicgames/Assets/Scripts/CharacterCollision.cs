@@ -26,17 +26,17 @@ public class CharacterCollision : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         //Minijuego 1 > Señora mayor
-        if (other.gameObject.name == "1D")
+        if (other.gameObject.name == "CP1D")
         {
             minijuego[0].SetActive(true);
         }
         //Minijuego 2 > Fachamilia
-        else if (other.gameObject.name == "3I")
+        else if (other.gameObject.name == "CP3I")
         {
             minijuego[1].SetActive(true);
         }
         //Minijuego 3 > Destender ropa
-        else if (other.gameObject.name == "4D")
+        else if (other.gameObject.name == "CP4D")
         {
             minijuego[2].SetActive(true);
         }

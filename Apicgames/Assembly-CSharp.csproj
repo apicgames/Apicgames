@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\CharacterCollision.cs" />
     <Compile Include="Assets\Scripts\MinijuegoUI.cs" />
     <Compile Include="Assets\Scripts\SceneManager.cs" />
+    <None Include="Assets\Textures\UI\Blur.shader" />
     <Reference Include="UnityEngine">
       <HintPath>/Applications/Unity/Hub/Editor/2019.4.23f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
