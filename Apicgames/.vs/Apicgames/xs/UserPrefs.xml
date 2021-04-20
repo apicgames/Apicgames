@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{92FEC762-BF97-FFC0-CD80-3083D6C07621}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CharacterCollision.cs">
     <Files>
-      <File FileName="Assets/Scripts/MinijuegoUI.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/CharacterCollision.cs" Line="37" Column="10" />
-      <File FileName="Assets/Scripts/Manager.cs" Line="12" Column="63" />
+      <File FileName="Assets/Scripts/SceneManager.cs" Line="81" Column="18" />
+      <File FileName="Assets/Scripts/MinijuegoUI.cs" Line="12" Column="6" />
+      <File FileName="Assets/Scripts/CharacterCollision.cs" Line="29" Column="43" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,7 +21,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="bf6f154c-e827-4368-b2a1-cf1353f0a529" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="448c59da-27b7-47ea-8bed-49aaa10377a4" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
