@@ -1,9 +1,10 @@
-﻿<Properties StartupConfiguration="{92FEC762-BF97-FFC0-CD80-3083D6C07621}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CharacterCollision.cs">
+﻿<Properties StartupConfiguration="{438F5015-5592-4B19-F448-6E9F1EC91132}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MainMenu.cs">
     <Files>
-      <File FileName="Assets/Scripts/SceneManager.cs" Line="81" Column="18" />
       <File FileName="Assets/Scripts/MinijuegoUI.cs" Line="12" Column="6" />
-      <File FileName="Assets/Scripts/CharacterCollision.cs" Line="29" Column="43" />
+      <File FileName="Assets/Scripts/CharacterCollision.cs" Line="80" Column="1" />
+      <File FileName="Assets/Scripts/Manager.cs" Line="105" Column="1" />
+      <File FileName="Assets/Scripts/MainMenu.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,7 +12,7 @@
           <Node name="Apicgames" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="CharacterCollision.cs" selected="True" />
+                <Node name="MainMenu.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -21,7 +22,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="448c59da-27b7-47ea-8bed-49aaa10377a4" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="67f8d0f9-c171-4ad2-8b05-1a5657721690" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

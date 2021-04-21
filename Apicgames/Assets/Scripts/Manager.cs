@@ -1,9 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Manager : MonoBehaviour
 {
+    //UI con los minijuegos
+    public GameObject[] minijuego;
+
     //Velocidad de movimiento
     private float speed = 4.0f;
     //Se actualizará la posición a la que debe ir el personaje en esta variable. Dividida en 3 pasos:
@@ -29,7 +33,7 @@ public class Manager : MonoBehaviour
         //La pisición inicial a la que se dirige es la propia del elemento (no queremos que se mueva)
         posEnd = character.transform.position;
         //El ascensor se moverá al piso en el que esté el personaje
-        posEndLift = new Vector2 (gameObjectLift.transform.position.x, character.transform.position.y + 0.2f);
+        posEndLift = new Vector2(gameObjectLift.transform.position.x, character.transform.position.y + 0.2f);
     }
 
     void Update()
@@ -58,41 +62,62 @@ public class Manager : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            //Pos ratón en 3D
-            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            //La convertimos a 2D
-            Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
-
-            //Si el ratón hace click en algo, se moverá a la posición del objeto
-            RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
-            if (hit.collider != null)
+            if (!EventSystem.current.IsPointerOverGameObject())
             {
-                //1º Derecha > Minijuego señora mayor
-                if (hit.collider.gameObject.name == "1D")
+                //Pos ratón en 3D
+                Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                //La convertimos a 2D
+                Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
+
+                //Si el ratón hace click en algo, se moverá a la posición del objeto
+                RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
+                if (hit.collider != null)
                 {
-                    //Asignamos las variables de movimiento por pasos (ascensor, planta, objeto)
-                    posEnd = new Vector2(gameObjectLift.transform.position.x, character.transform.position.y);
-                    posFloorY = new Vector2(gameObjectLift.transform.position.x, minigamePuntoCollision[0].transform.position.y);
-                    posFloorYLift = new Vector2(gameObjectLift.transform.position.x, minigamePuntoCollision[0].transform.position.y + 0.2f);
-                    posObjectX = new Vector2(minigamePuntoCollision[0].transform.position.x, minigamePuntoCollision[0].transform.position.y);
-                }
-                //3º Izquierda > Minijuego fachafamilia
-                else if (hit.collider.gameObject.name == "3I")
-                {
-                    //Asignamos las variables de movimiento por pasos (ascensor, planta, objeto)
-                    posEnd = new Vector2(gameObjectLift.transform.position.x, character.transform.position.y);
-                    posFloorY = new Vector2(gameObjectLift.transform.position.x, minigamePuntoCollision[1].transform.position.y);
-                    posFloorYLift = new Vector2(gameObjectLift.transform.position.x, minigamePuntoCollision[1].transform.position.y + 0.2f);
-                    posObjectX = new Vector2(minigamePuntoCollision[1].transform.position.x, minigamePuntoCollision[1].transform.position.y);
-                }
-                //4º Derecha > Minijuego ropa tendida
-                else if (hit.collider.gameObject.name == "4D")
-                {
-                    //Asignamos las variables de movimiento por pasos (ascensor, planta, objeto)
-                    posEnd = new Vector2(gameObjectLift.transform.position.x, character.transform.position.y);
-                    posFloorY = new Vector2(gameObjectLift.transform.position.x, minigamePuntoCollision[2].transform.position.y);
-                    posFloorYLift = new Vector2(gameObjectLift.transform.position.x, minigamePuntoCollision[2].transform.position.y + 0.2f);
-                    posObjectX = new Vector2(minigamePuntoCollision[2].transform.position.x, minigamePuntoCollision[2].transform.position.y);
+                    //1º Derecha > Minijuego señora mayor
+                    if (hit.collider.gameObject.name == "1D")
+                    {
+                        //Asignamos las variables de movimiento por pasos (ascensor, planta, objeto)
+                        posEnd = new Vector2(gameObjectLift.transform.position.x, character.transform.position.y);
+                        posFloorY = new Vector2(gameObjectLift.transform.position.x, minigamePuntoCollision[0].transform.position.y);
+                        posFloorYLift = new Vector2(gameObjectLift.transform.position.x, minigamePuntoCollision[0].transform.position.y + 0.2f);
+                        posObjectX = new Vector2(minigamePuntoCollision[0].transform.position.x, minigamePuntoCollision[0].transform.position.y);
+
+                        if (character2D.x == posObjectX.x && character2D.y == posObjectX.y)
+                        {
+                            posEnd = posObjectX;
+                            minijuego[0].SetActive(true);
+                        }
+                    }
+                    //3º Izquierda > Minijuego fachafamilia
+                    else if (hit.collider.gameObject.name == "3I")
+                    {
+                        //Asignamos las variables de movimiento por pasos (ascensor, planta, objeto)
+                        posEnd = new Vector2(gameObjectLift.transform.position.x, character.transform.position.y);
+                        posFloorY = new Vector2(gameObjectLift.transform.position.x, minigamePuntoCollision[1].transform.position.y);
+                        posFloorYLift = new Vector2(gameObjectLift.transform.position.x, minigamePuntoCollision[1].transform.position.y + 0.2f);
+                        posObjectX = new Vector2(minigamePuntoCollision[1].transform.position.x, minigamePuntoCollision[1].transform.position.y);
+
+                        if (character2D.x == posObjectX.x && character2D.y == posObjectX.y)
+                        {
+                            posEnd = posObjectX;
+                            minijuego[1].SetActive(true);
+                        }
+                    }
+                    //4º Derecha > Minijuego ropa tendida
+                    else if (hit.collider.gameObject.name == "4D")
+                    {
+                        //Asignamos las variables de movimiento por pasos (ascensor, planta, objeto)
+                        posEnd = new Vector2(gameObjectLift.transform.position.x, character.transform.position.y);
+                        posFloorY = new Vector2(gameObjectLift.transform.position.x, minigamePuntoCollision[2].transform.position.y);
+                        posFloorYLift = new Vector2(gameObjectLift.transform.position.x, minigamePuntoCollision[2].transform.position.y + 0.2f);
+                        posObjectX = new Vector2(minigamePuntoCollision[2].transform.position.x, minigamePuntoCollision[2].transform.position.y);
+
+                        if (character2D.x == posObjectX.x && character2D.y == posObjectX.y)
+                        {
+                            posEnd = posObjectX;
+                            minijuego[2].SetActive(true);
+                        }
+                    }
                 }
             }
         }

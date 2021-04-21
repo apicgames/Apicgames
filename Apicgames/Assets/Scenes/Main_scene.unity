@@ -2726,6 +2726,7 @@ MonoBehaviour:
   - {fileID: 718885377}
   - {fileID: 1782309798}
   - {fileID: 2068699386}
+  animator: {fileID: 1275943247}
 --- !u!61 &1275943251
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4179,7 +4180,7 @@ PrefabInstance:
     - target: {fileID: 5569440166151877858, guid: fddb0cb7501b84ec88f5251267a266a3,
         type: 3}
       propertyPath: minijuego.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5569440166151877858, guid: fddb0cb7501b84ec88f5251267a266a3,
         type: 3}
@@ -4191,6 +4192,16 @@ PrefabInstance:
       propertyPath: minijuego.Array.data[0]
       value: 
       objectReference: {fileID: 718885377}
+    - target: {fileID: 5569440166151877858, guid: fddb0cb7501b84ec88f5251267a266a3,
+        type: 3}
+      propertyPath: minijuego.Array.data[1]
+      value: 
+      objectReference: {fileID: 1782309798}
+    - target: {fileID: 5569440166151877858, guid: fddb0cb7501b84ec88f5251267a266a3,
+        type: 3}
+      propertyPath: minijuego.Array.data[2]
+      value: 
+      objectReference: {fileID: 2068699386}
     - target: {fileID: 5569440166151877858, guid: fddb0cb7501b84ec88f5251267a266a3,
         type: 3}
       propertyPath: minigamePuntoCollision.Array.size
