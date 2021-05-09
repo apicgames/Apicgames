@@ -9,7 +9,7 @@ public class Manager : MonoBehaviour
     public GameObject[] minijuego;
 
     //Velocidad de movimiento
-    private float speed = 4.0f;
+    private float speed = 3.0f;
     //Se actualizará la posición a la que debe ir el personaje en esta variable. Dividida en 3 pasos:
     private Vector2 posFloorY; //Posición de la planta en Y
     private Vector2 posObjectX; //Punto final en X
