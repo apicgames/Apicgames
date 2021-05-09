@@ -41,3 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Fondo
+    uniqueID: 2621141733
+    locked: 0
+  - name: Minijuegos
+    uniqueID: 4064142487
+    locked: 0
+  - name: MenuPausa
+    uniqueID: 3744087461
+    locked: 0
