@@ -34,7 +34,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(true); //activar el menu de pausa
         Time.timeScale = 0f; //pausar el tiempo de juego
         GameIsPaused = true; //decir que el juego está en pausa
-        //descativar audio del juego o minijjuegos
+        //descativar audio o bajar el voluman del juego o minijjuegos
 
     }
     public void LoadMenu() //Cargar el menú
