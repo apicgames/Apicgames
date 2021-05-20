@@ -9,9 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Main_menu.unity
     guid: 2b003b26ae374db4b8c5bc4ea44c81eb
   - enabled: 1
-    path: Assets/Scenes/Cut_sccene.unity
+    path: Assets/Scenes/Cut_scene.unity
     guid: 0be6afc25b086cc49bfd3e4ba601050b
   - enabled: 1
     path: Assets/Scenes/Main_scene.unity
     guid: 3fe16de3602944a35897e479774106e3
+  - enabled: 1
+    path: Assets/Scenes/Eviction_scene.unity
+    guid: 361a2b825c6c17c4f996e3a47a19a42c
   m_configObjects: {}

@@ -351,6 +351,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4989480000505791518}
   - component: {fileID: 4333508934454162813}
+  - component: {fileID: 2570534214329813259}
   - component: {fileID: 5267162414988535238}
   m_Layer: 5
   m_Name: Dialogue Text
@@ -386,6 +387,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4669960744928456955}
   m_CullTransparentMesh: 0
+--- !u!114 &2570534214329813259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4669960744928456955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19e3fbce3be254e458d7577ee2aebef6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 0.03
+  fullText: Socorro Noah se ha ido la luz en mi casa, no funciona ni la nevera.
 --- !u!114 &5267162414988535238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -407,7 +422,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 1271162f1d51743589314b00de40a8e5, type: 3}
-    m_FontSize: 35
+    m_FontSize: 27
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -418,7 +433,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Socorro Noah se ha ido la luz en mi casa, no funciona ni la nevera.
+  m_Text: 
 --- !u!1 &5500769653966799882
 GameObject:
   m_ObjectHideFlags: 0
