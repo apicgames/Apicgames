@@ -279,7 +279,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ced55117c96074993a6aea16ac792f46, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -591,9 +591,9 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Llega el d\xEDa de tu desalojo. Te encuentras en el portal de casa entre
-    gritos. Tres vecinos han salido a apoyarte, pero los 6 guardas de polic\xEDa
-    preparados para tu desahucio han llegado hasta ti y te arrastran hacia el coche
-    a la fuerza. "
+    gritos. Algunos vecinos han salido a apoyarte, pero no ha sido suficiente, los
+    guardas de polic\xEDa han llegado hasta ti y te arrastran hacia el coche a la
+    fuerza. "
 --- !u!222 &1426902021
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -27,7 +27,6 @@ public class TypeWriterEffect : MonoBehaviour
 			this.GetComponent<Text>().text = currentText;
 			yield return new WaitForSeconds(delay);
 		}
-		print(fullText.Substring(0, fullText.Length));
 	}
 
     void completeText()

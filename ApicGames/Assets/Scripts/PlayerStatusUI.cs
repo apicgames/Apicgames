@@ -28,7 +28,7 @@ public class PlayerStatusUI : MonoBehaviour
 
     public void SetHealth(float healthPercentage)
     {
-        maxFelicidad = maxFelicidad + 0.1f;
+        maxFelicidad = healthPercentage;
     }
 
 }
