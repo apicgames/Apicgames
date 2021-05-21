@@ -44,14 +44,7 @@ public class Timer : MonoBehaviour
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
-            /*if (timeValue < 20)
-            {
-               background_0.GetComponent<SpriteRenderer>().color = new Color32(0,0,0,100);
-
-            }
-            for
-            
-         */
+  
         }
 
 
@@ -107,8 +100,6 @@ public class Timer : MonoBehaviour
         }
     }
 
-    //si el tiempo es <0 y la barra de felicidad no está completa {viene la poli a reventarte}
-    //si el tiempo es <0 y la barra de felicidad está completa {resetar el tiempo y cambiar el dia al siguiente}
         
     void DisplayTime(float timeToDisplay) //y esto es para decirle como displayearlo
     {
