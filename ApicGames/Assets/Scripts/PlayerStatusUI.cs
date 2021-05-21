@@ -15,7 +15,6 @@ public class PlayerStatusUI : MonoBehaviour
     {
         barraFelicidad.fillAmount = 0f;
 
-        //barraFelicidad.fillAmount = 1f;
         maxFelicidad = barraFelicidad.fillAmount;
     }
 
@@ -29,7 +28,7 @@ public class PlayerStatusUI : MonoBehaviour
 
     public void SetHealth(float healthPercentage)
     {
-        maxFelicidad = healthPercentage;
+        maxFelicidad = maxFelicidad + 0.1f;
     }
 
 }

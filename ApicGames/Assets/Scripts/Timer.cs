@@ -12,6 +12,7 @@ public class Timer : MonoBehaviour
 
     public SpriteRenderer background;
     float opacity = 1f;
+    float animationDaySpeed = 0.005f;
 
     void Update()
     {
@@ -55,50 +56,50 @@ public class Timer : MonoBehaviour
 
 
         //Para el fondo
-        if (timeValue < 90 && timeValue > 85)
+        if (timeValue < 90 && timeValue > 85 && opacity > animationDaySpeed)
         {
-            opacity = opacity - 0.005f;
+            opacity = opacity - animationDaySpeed;
         } else if (timeValue == 86)
         {
             opacity = 0f;
         }
 
-        else if (timeValue < 65 && timeValue > 59)
+        else if (timeValue < 65 && timeValue > 59 && opacity < 1f - animationDaySpeed)
         {
-            opacity = opacity + 0.005f;
+            opacity = opacity + animationDaySpeed;
         }
         else if (timeValue == 59)
         {
             opacity = 1f;
-        } else if (timeValue < 60 && timeValue > 55)
+        } else if (timeValue < 60 && timeValue > 55 && opacity > animationDaySpeed)
         {
-            opacity = opacity - 0.005f;
+            opacity = opacity - animationDaySpeed;
         }
         else if (timeValue == 55)
         {
             opacity = 0f;
         }
 
-        else if (timeValue < 35 && timeValue > 29)
+        else if (timeValue < 35 && timeValue > 29 && opacity < 1f - animationDaySpeed)
         {
-            opacity = opacity + 0.005f;
+            opacity = opacity + animationDaySpeed;
         }
         else if (timeValue == 29)
         {
             opacity = 1f;
         }
-        else if (timeValue < 30 && timeValue > 25)
+        else if (timeValue < 30 && timeValue > 25 && opacity > animationDaySpeed)
         {
-            opacity = opacity - 0.005f;
+            opacity = opacity - animationDaySpeed;
         }
         else if (timeValue == 25)
         {
             opacity = 0f;
         }
 
-        else if (timeValue < 5 && timeValue > 1)
+        else if (timeValue < 5 && timeValue > 1 && opacity < 1f - animationDaySpeed)
         {
-            opacity = opacity + 0.005f;
+            opacity = opacity + animationDaySpeed;
         }
         else if (timeValue == 1)
         {
