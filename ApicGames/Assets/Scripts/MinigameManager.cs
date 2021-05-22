@@ -73,7 +73,7 @@ public class MinigameManager : MonoBehaviour
             cloth[closureIndex].onClick.AddListener(() => destroyCloth(closureIndex));
 
             //RANDOM CLOTHES
-            cloth[closureIndex].transform.localPosition = new Vector3(Random.Range(-266f, 267f), -238f, 0.0f);
+            cloth[closureIndex].transform.localPosition = new Vector3(Random.Range(-266f, 267f), -209f, 0.0f);
         }
 
         /*-------- LIGHTS --------*/
@@ -106,7 +106,7 @@ public class MinigameManager : MonoBehaviour
                 cloth[i].gameObject.SetActive(true);
 
                 //RANDOM CLOTHES
-                cloth[i].transform.localPosition = new Vector3(Random.Range(-266f, 267f), 70f, 0.0f);
+                cloth[i].transform.localPosition = new Vector3(Random.Range(-266f, 267f), 123f, 0.0f);
             }
 
             clothCounter = 0; //Lo igualamos a 0 para que no entre en el bucle más veces
