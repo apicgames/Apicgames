@@ -1,15 +1,15 @@
 ﻿<Properties StartupConfiguration="{438F5015-5592-4B19-F448-6E9F1EC91132}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UrlOpener.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MinigameManager.cs">
     <Files>
       <File FileName="Assets/Scripts/BlinkingText.cs" Line="24" Column="35" />
-      <File FileName="Assets/Scripts/MinigameManager.cs" Line="109" Column="94" />
+      <File FileName="Assets/Scripts/MinigameManager.cs" Line="99" Column="60" />
       <File FileName="Assets/Scripts/TypeWriterEffect.cs" />
-      <File FileName="Assets/Scripts/PlayerStatusUI.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/PlayerStatusUI.cs" />
       <File FileName="Assets/Scripts/EndController.cs" />
-      <File FileName="Assets/Scripts/Manager.cs" Line="109" Column="40" />
-      <File FileName="Assets/Scripts/MinijuegoUI.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/PauseMenu.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/UrlOpener.cs" Line="11" Column="2" />
+      <File FileName="Assets/Scripts/Manager.cs" Line="64" Column="10" />
+      <File FileName="Assets/Scripts/MinijuegoUI.cs" />
+      <File FileName="Assets/Scripts/PauseMenu.cs" />
+      <File FileName="Assets/Scripts/UrlOpener.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,7 +17,7 @@
           <Node name="Apicgames" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="UrlOpener.cs" selected="True" />
+                <Node name="MinigameManager.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -27,7 +27,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9c6db5fa-8421-43ab-a3bb-33aadd29c886" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="eced36d8-0d63-472b-8940-7b7e0445355d" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

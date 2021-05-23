@@ -36,8 +36,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -80,23 +82,23 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11292}
+      Script: {instanceID: 11298}
     - Class: 114
-      Script: {instanceID: 11316}
+      Script: {instanceID: 11322}
     - Class: 114
-      Script: {instanceID: 11662}
+      Script: {instanceID: 11668}
     - Class: 114
-      Script: {instanceID: 12178}
+      Script: {instanceID: 12184}
     - Class: 114
-      Script: {instanceID: 12334}
+      Script: {instanceID: 12340}
     - Class: 114
-      Script: {instanceID: 13040}
+      Script: {instanceID: 13046}
     - Class: 114
-      Script: {instanceID: 13810}
+      Script: {instanceID: 13816}
     - Class: 114
-      Script: {instanceID: 14108}
+      Script: {instanceID: 14114}
     - Class: 114
-      Script: {instanceID: 14428}
+      Script: {instanceID: 14434}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -141,23 +143,23 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11292}
+      Script: {instanceID: 11298}
     - Class: 114
-      Script: {instanceID: 11316}
+      Script: {instanceID: 11322}
     - Class: 114
-      Script: {instanceID: 11662}
+      Script: {instanceID: 11668}
     - Class: 114
-      Script: {instanceID: 12334}
+      Script: {instanceID: 12340}
     - Class: 114
-      Script: {instanceID: 13040}
+      Script: {instanceID: 13046}
     - Class: 114
-      Script: {instanceID: 13738}
+      Script: {instanceID: 13744}
     - Class: 114
-      Script: {instanceID: 13810}
+      Script: {instanceID: 13816}
     - Class: 114
-      Script: {instanceID: 14108}
+      Script: {instanceID: 14114}
     - Class: 114
-      Script: {instanceID: 14428}
+      Script: {instanceID: 14434}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -198,35 +200,35 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11292}
+      Script: {instanceID: 11298}
     - Class: 114
-      Script: {instanceID: 11316}
+      Script: {instanceID: 11322}
     - Class: 114
-      Script: {instanceID: 11610}
+      Script: {instanceID: 11616}
     - Class: 114
-      Script: {instanceID: 11662}
+      Script: {instanceID: 11668}
     - Class: 114
-      Script: {instanceID: 12258}
+      Script: {instanceID: 12264}
     - Class: 114
-      Script: {instanceID: 12334}
+      Script: {instanceID: 12340}
     - Class: 114
-      Script: {instanceID: 12386}
+      Script: {instanceID: 12392}
     - Class: 114
-      Script: {instanceID: 13040}
+      Script: {instanceID: 13046}
     - Class: 114
-      Script: {instanceID: 13390}
+      Script: {instanceID: 13396}
     - Class: 114
-      Script: {instanceID: 13408}
+      Script: {instanceID: 13414}
     - Class: 114
-      Script: {instanceID: 13706}
+      Script: {instanceID: 13712}
     - Class: 114
-      Script: {instanceID: 13810}
+      Script: {instanceID: 13816}
     - Class: 114
-      Script: {instanceID: 14088}
+      Script: {instanceID: 14094}
     - Class: 114
-      Script: {instanceID: 14108}
+      Script: {instanceID: 14114}
     - Class: 114
-      Script: {instanceID: 14428}
+      Script: {instanceID: 14434}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -275,43 +277,43 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11292}
+      Script: {instanceID: 11298}
     - Class: 114
-      Script: {instanceID: 11316}
+      Script: {instanceID: 11322}
     - Class: 114
-      Script: {instanceID: 11506}
+      Script: {instanceID: 11512}
     - Class: 114
-      Script: {instanceID: 11520}
+      Script: {instanceID: 11526}
     - Class: 114
-      Script: {instanceID: 11662}
+      Script: {instanceID: 11668}
     - Class: 114
-      Script: {instanceID: 11764}
+      Script: {instanceID: 11770}
     - Class: 114
-      Script: {instanceID: 12334}
+      Script: {instanceID: 12340}
     - Class: 114
-      Script: {instanceID: 12890}
+      Script: {instanceID: 12896}
     - Class: 114
-      Script: {instanceID: 12996}
+      Script: {instanceID: 13002}
     - Class: 114
-      Script: {instanceID: 13040}
+      Script: {instanceID: 13046}
     - Class: 114
-      Script: {instanceID: 13100}
+      Script: {instanceID: 13106}
     - Class: 114
-      Script: {instanceID: 13200}
+      Script: {instanceID: 13206}
     - Class: 114
-      Script: {instanceID: 13390}
+      Script: {instanceID: 13396}
     - Class: 114
-      Script: {instanceID: 13706}
+      Script: {instanceID: 13712}
     - Class: 114
-      Script: {instanceID: 13810}
+      Script: {instanceID: 13816}
     - Class: 114
-      Script: {instanceID: 14108}
+      Script: {instanceID: 14114}
     - Class: 114
-      Script: {instanceID: 14294}
+      Script: {instanceID: 14300}
     - Class: 114
-      Script: {instanceID: 14316}
+      Script: {instanceID: 14322}
     - Class: 114
-      Script: {instanceID: 14428}
+      Script: {instanceID: 14434}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -645,7 +647,7 @@ ScriptsOnlyBuild:
     className: RemoteTestResultSender
   - hash:
       serializedVersion: 2
-      Hash: 86087af2fcd7fcee46b35cb3cb62d528
+      Hash: da7dc1541d9830c285d1bcc14f8fe016
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MinigameManager

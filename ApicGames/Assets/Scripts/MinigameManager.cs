@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class MinigameManager : MonoBehaviour
 {
     /*-------- GENERAL --------*/
-    float timeAlerts = 15.0f;
+    float timeAlerts = 12.0f;
 
     /*-------- CLOTHES --------*/
     public Button[] cloth;
@@ -29,6 +29,116 @@ public class MinigameManager : MonoBehaviour
     public GameObject mgLights;
 
     float timeAlertLights;
+
+    void RandomLights()
+    {
+        for (var i = 0; i < light_active.Length; i++)
+        {
+            //RANDOM LIGHTS
+            bool active_random = (Random.value > 0.5f);
+            light_active[i] = active_random;
+            if (active_random == true)
+            {
+                lights[i].GetComponent<Image>().sprite = btn_up[i];
+            }
+            else
+            {
+                lights[i].GetComponent<Image>().sprite = btn_down[i];
+            }
+        }
+    }
+
+    /*-------- PUZZLE --------*/
+    public Image[] piece;
+    public GameObject alertPuzzle;
+    public GameObject mgPuzzle;
+
+    float timeAlertPuzzle;
+
+    public Button[] pieceButton;
+    public Button[] pieceEmpty;
+
+    //Genera 4 valores random distintos entre ellos
+    int randomPiece1;
+    int randomPiece2;
+    int randomPiece3;
+    int randomPiece4;
+
+    void GetRandom(int min, int max)
+    {
+        randomPiece1 = Random.Range(min, max);
+
+        randomPiece2 = Random.Range(min, max);
+        while (randomPiece2 == randomPiece1)
+        {
+            randomPiece2 = Random.Range(min, max);
+        }
+
+        randomPiece3 = Random.Range(min, max);
+        while (randomPiece3 == randomPiece1 || randomPiece3 == randomPiece2)
+        {
+            randomPiece3 = Random.Range(min, max);
+        }
+
+        randomPiece4 = Random.Range(min, max);
+        while (randomPiece4 == randomPiece1 || randomPiece4 == randomPiece2 || randomPiece4 == randomPiece3)
+        {
+            randomPiece4 = Random.Range(min, max);
+        }
+
+        piece[randomPiece1].enabled = false;
+        piece[randomPiece2].enabled = false;
+        piece[randomPiece3].enabled = false;
+        piece[randomPiece4].enabled = false;
+
+        pieceEmpty[0].transform.localPosition = piece[randomPiece1].transform.localPosition;
+        pieceEmpty[1].transform.localPosition = piece[randomPiece2].transform.localPosition;
+        pieceEmpty[2].transform.localPosition = piece[randomPiece3].transform.localPosition;
+        pieceEmpty[3].transform.localPosition = piece[randomPiece4].transform.localPosition;
+
+        pieceButton[0].GetComponent<Image>().sprite = piece[randomPiece1].sprite;
+        pieceButton[0].GetComponent<Image>().SetNativeSize();
+        pieceButton[1].GetComponent<Image>().sprite = piece[randomPiece2].sprite;
+        pieceButton[1].GetComponent<Image>().SetNativeSize();
+        pieceButton[2].GetComponent<Image>().sprite = piece[randomPiece3].sprite;
+        pieceButton[2].GetComponent<Image>().SetNativeSize();
+        pieceButton[3].GetComponent<Image>().sprite = piece[randomPiece4].sprite;
+        pieceButton[3].GetComponent<Image>().SetNativeSize();
+    }
+
+    int whichPiece;
+
+    void puzzlePieceBgn(int valuePieceInitial)
+    {
+        whichPiece = valuePieceInitial;
+    }
+
+    void puzzlePieceEnd(int valuePieceFinal)
+    {
+        if (valuePieceFinal == whichPiece)
+        {
+            pieceButton[valuePieceFinal].gameObject.SetActive(false);
+            pieceButton[valuePieceFinal].interactable = false;
+            pieceEmpty[valuePieceFinal].gameObject.SetActive(false);
+            pieceEmpty[valuePieceFinal].interactable = false;
+
+            if(whichPiece == 0)
+            {
+                piece[randomPiece1].enabled = true;
+            } else if (whichPiece == 1)
+            {
+                piece[randomPiece2].enabled = true;
+            }
+            else if (whichPiece == 2)
+            {
+                piece[randomPiece3].enabled = true;
+            }
+            else if (whichPiece == 3)
+            {
+                piece[randomPiece4].enabled = true;
+            }
+        }
+    }
 
     //Activo
     public bool[] light_active;
@@ -85,6 +195,15 @@ public class MinigameManager : MonoBehaviour
             RandomLights();
         }
 
+        /*-------- PUZZLE --------*/
+        for (int i = 0; i < pieceButton.Length; i++)
+        {
+            int closureIndex = i;
+            pieceButton[closureIndex].onClick.AddListener(() => puzzlePieceBgn(closureIndex));
+            pieceEmpty[closureIndex].onClick.AddListener(() => puzzlePieceEnd(closureIndex));
+        }
+        GetRandom(0, piece.Length);
+
         /*-------- BARRA --------*/
         MaxFelicidad = 100;
     }
@@ -98,7 +217,7 @@ public class MinigameManager : MonoBehaviour
             mgCloth.SetActive(false);
             alertCloth.SetActive(false);
 
-            MakeHappy(10);
+            MakeHappy(5);
 
             //Los reiniciamos todos
             for (var i = 0; i < cloth.Length; i++)
@@ -106,7 +225,7 @@ public class MinigameManager : MonoBehaviour
                 cloth[i].gameObject.SetActive(true);
 
                 //RANDOM CLOTHES
-                cloth[i].transform.localPosition = new Vector3(Random.Range(-266f, 267f), 123f, 0.0f);
+                cloth[i].transform.localPosition = new Vector3(Random.Range(-266f, 267f), 142f, 0.0f);
             }
 
             clothCounter = 0; //Lo igualamos a 0 para que no entre en el bucle más veces
@@ -128,7 +247,7 @@ public class MinigameManager : MonoBehaviour
             alertLights.SetActive(false);
             mgLights.SetActive(false);
 
-            MakeHappy(10);
+            MakeHappy(5);
 
             //Los reiniciamos todos
             for (var i = 0; i < light_active.Length; i++)
@@ -146,23 +265,33 @@ public class MinigameManager : MonoBehaviour
         {
             alertLights.SetActive(true);
         }
-    }
 
-    void RandomLights()
-    {
-        for (var i = 0; i < light_active.Length; i++)
+        /*-------- PUZZLE --------*/
+        if (piece[randomPiece1].enabled == true && piece[randomPiece2].enabled == true && piece[randomPiece3].enabled == true && piece[randomPiece4].enabled == true)
         {
-            //RANDOM LIGHTS
-            bool active_random = (Random.value > 0.5f);
-            light_active[i] = active_random;
-            if (active_random == true)
+            alertPuzzle.SetActive(false);
+            mgPuzzle.SetActive(false);
+
+            MakeHappy(5);
+
+            //Los reiniciamos todos
+            for (var i = 0; i < pieceButton.Length; i++)
             {
-                lights[i].GetComponent<Image>().sprite = btn_up[i];
+                pieceButton[i].gameObject.SetActive(true);
+                pieceButton[i].interactable = true;
+                pieceEmpty[i].gameObject.SetActive(true);
+                pieceEmpty[i].interactable = true;
             }
-            else
-            {
-                lights[i].GetComponent<Image>().sprite = btn_down[i];
-            }
+
+            GetRandom(0, piece.Length);
+            timeAlertPuzzle = timeAlerts;
+        }
+
+        //TIMER
+        timeAlertPuzzle -= Time.deltaTime;
+        if (timeAlertPuzzle < 0)
+        {
+            alertPuzzle.SetActive(true);
         }
     }
 
