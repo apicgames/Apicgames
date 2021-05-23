@@ -115,6 +115,34 @@ public class MinigameManager : MonoBehaviour
     void puzzlePieceBgn(int valuePieceInitial)
     {
         whichPiece = valuePieceInitial;
+        if (whichPiece == 0)
+        {
+            pieceButton[0].GetComponent<Image>().color = new Color(255, 255, 255, 1);
+            pieceButton[1].GetComponent<Image>().color = new Color(255, 255, 255, 0.4f);
+            pieceButton[2].GetComponent<Image>().color = new Color(255, 255, 255, 0.4f);
+            pieceButton[3].GetComponent<Image>().color = new Color(255, 255, 255, 0.4f);
+        }
+        if (whichPiece == 1)
+        {
+            pieceButton[0].GetComponent<Image>().color = new Color(255, 255, 255, 0.4f);
+            pieceButton[1].GetComponent<Image>().color = new Color(255, 255, 255, 1);
+            pieceButton[2].GetComponent<Image>().color = new Color(255, 255, 255, 0.4f);
+            pieceButton[3].GetComponent<Image>().color = new Color(255, 255, 255, 0.4f);
+        }
+        if (whichPiece == 2)
+        {
+            pieceButton[0].GetComponent<Image>().color = new Color(255, 255, 255, 0.4f);
+            pieceButton[1].GetComponent<Image>().color = new Color(255, 255, 255, 0.4f);
+            pieceButton[2].GetComponent<Image>().color = new Color(255, 255, 255, 1);
+            pieceButton[3].GetComponent<Image>().color = new Color(255, 255, 255, 0.4f);
+        }
+        if (whichPiece == 3)
+        {
+            pieceButton[0].GetComponent<Image>().color = new Color(255, 255, 255, 0.4f);
+            pieceButton[1].GetComponent<Image>().color = new Color(255, 255, 255, 0.4f);
+            pieceButton[2].GetComponent<Image>().color = new Color(255, 255, 255, 0.4f);
+            pieceButton[3].GetComponent<Image>().color = new Color(255, 255, 255, 1);
+        }
     }
 
     void puzzlePieceEnd(int valuePieceFinal)
@@ -126,7 +154,12 @@ public class MinigameManager : MonoBehaviour
             pieceEmpty[valuePieceFinal].gameObject.SetActive(false);
             pieceEmpty[valuePieceFinal].interactable = false;
 
-            if(whichPiece == 0)
+            pieceButton[0].GetComponent<Image>().color = new Color(255, 255, 255, 1);
+            pieceButton[1].GetComponent<Image>().color = new Color(255, 255, 255, 1);
+            pieceButton[2].GetComponent<Image>().color = new Color(255, 255, 255, 1);
+            pieceButton[3].GetComponent<Image>().color = new Color(255, 255, 255, 1);
+
+            if (whichPiece == 0)
             {
                 piece[randomPiece1].enabled = true;
             } else if (whichPiece == 1)

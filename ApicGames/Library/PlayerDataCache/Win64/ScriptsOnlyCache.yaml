@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - AnimationManager
+    - BlinkingObject
     - BlinkingText
     - CharacterCollision
     - CutSceneManager
@@ -318,6 +319,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14324}
     - Class: 114
       Script: {instanceID: 14436}
+    - Class: 114
+      Script: {instanceID: 16520}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -919,6 +922,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 12fa64eb216bb123f8a02f3309b2c3f7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BlinkingObject
   platform: 19
   scenePathNames:
   - Assets/Scenes/Main_menu.unity
@@ -926,4 +935,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Main_scene.unity
   - Assets/Scenes/Eviction_scene.unity
   playerPath: /Users/aliciamartinez/Desktop/1_MASTER/1.2 - Arte y Videojuegos/Apicgames
-    Local/07_Builds/evictiont_windows_01/Eviction't.exe
+    Local/07_Builds/evictiont_windows_02/Eviction't.exe
