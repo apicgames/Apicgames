@@ -8,6 +8,7 @@ public class MinigameManager : MonoBehaviour
 {
     /*-------- GENERAL --------*/
     float timeAlerts = 12.0f;
+    public Button[] alertButton;
 
     /*-------- CLOTHES --------*/
     public Button[] cloth;
@@ -46,6 +47,9 @@ public class MinigameManager : MonoBehaviour
                 lights[i].GetComponent<Image>().sprite = btn_down[i];
             }
         }
+
+        light_active[0] = false;
+        lights[0].GetComponent<Image>().sprite = btn_down[0];
     }
 
     /*-------- PUZZLE --------*/
@@ -183,7 +187,7 @@ public class MinigameManager : MonoBehaviour
             cloth[closureIndex].onClick.AddListener(() => destroyCloth(closureIndex));
 
             //RANDOM CLOTHES
-            cloth[closureIndex].transform.localPosition = new Vector3(Random.Range(-266f, 267f), -209f, 0.0f);
+            cloth[closureIndex].GetComponent<RectTransform>().anchoredPosition = new Vector2(Random.Range(-212f, 212f), -142f);
         }
 
         /*-------- LIGHTS --------*/
@@ -216,6 +220,8 @@ public class MinigameManager : MonoBehaviour
         {
             mgCloth.SetActive(false);
             alertCloth.SetActive(false);
+            alertButton[2].gameObject.SetActive(false);
+            alertButton[2].interactable = false;
 
             MakeHappy(5);
 
@@ -225,7 +231,7 @@ public class MinigameManager : MonoBehaviour
                 cloth[i].gameObject.SetActive(true);
 
                 //RANDOM CLOTHES
-                cloth[i].transform.localPosition = new Vector3(Random.Range(-266f, 267f), 142f, 0.0f);
+                cloth[i].GetComponent<RectTransform>().anchoredPosition = new Vector2(Random.Range(-212f, 212f), -142f);
             }
 
             clothCounter = 0; //Lo igualamos a 0 para que no entre en el bucle más veces
@@ -238,6 +244,8 @@ public class MinigameManager : MonoBehaviour
         if (timeAlertClothes < 0)
         {
             alertCloth.SetActive(true);
+            alertButton[2].gameObject.SetActive(true);
+            alertButton[2].interactable = true;
         }
 
         /*-------- LIGHTS --------*/
@@ -246,6 +254,8 @@ public class MinigameManager : MonoBehaviour
         {
             alertLights.SetActive(false);
             mgLights.SetActive(false);
+            alertButton[1].gameObject.SetActive(false);
+            alertButton[1].interactable = false;
 
             MakeHappy(5);
 
@@ -264,6 +274,8 @@ public class MinigameManager : MonoBehaviour
         if (timeAlertLights < 0)
         {
             alertLights.SetActive(true);
+            alertButton[1].gameObject.SetActive(true);
+            alertButton[1].interactable = true;
         }
 
         /*-------- PUZZLE --------*/
@@ -271,6 +283,8 @@ public class MinigameManager : MonoBehaviour
         {
             alertPuzzle.SetActive(false);
             mgPuzzle.SetActive(false);
+            alertButton[0].gameObject.SetActive(false);
+            alertButton[0].interactable = false;
 
             MakeHappy(5);
 
@@ -292,6 +306,8 @@ public class MinigameManager : MonoBehaviour
         if (timeAlertPuzzle < 0)
         {
             alertPuzzle.SetActive(true);
+            alertButton[0].gameObject.SetActive(true);
+            alertButton[0].interactable = true;
         }
     }
 

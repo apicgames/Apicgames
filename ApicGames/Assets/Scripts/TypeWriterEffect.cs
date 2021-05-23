@@ -16,7 +16,8 @@ public class TypeWriterEffect : MonoBehaviour
 	{
 		StartCoroutine(ShowText());
 
-		close.onClick.AddListener(() => completeText());
+		Button btnclose = close.GetComponent<Button>();
+		btnclose.onClick.AddListener(completeText);
 	}
 
 	IEnumerator ShowText()
