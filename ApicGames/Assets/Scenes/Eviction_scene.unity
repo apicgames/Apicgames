@@ -765,8 +765,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "Llega el d\xEDa de tu desalojo. Te encuentras en el portal de casa entre
     gritos. Algunos vecinos han salido a apoyarte, pero no ha sido suficiente, los
-    guardas de polic\xEDa han llegado hasta ti y te arrastran hacia el coche a la
-    fuerza. "
+    guardas de polic\xEDa han llegado hasta ti y te sacan de casa arrastrando. "
 --- !u!222 &1426902021
 CanvasRenderer:
   m_ObjectHideFlags: 0

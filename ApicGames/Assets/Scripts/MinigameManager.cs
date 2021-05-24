@@ -16,6 +16,8 @@ public class MinigameManager : MonoBehaviour
     public GameObject alertCloth;
     public GameObject mgCloth;
 
+    public Text textCloth;
+
     public void destroyCloth(int buttonIndex)
     {
         cloth[buttonIndex].gameObject.SetActive(false);
@@ -30,6 +32,8 @@ public class MinigameManager : MonoBehaviour
     public GameObject mgLights;
 
     float timeAlertLights;
+
+    public Text textLights;
 
     void RandomLights()
     {
@@ -61,6 +65,8 @@ public class MinigameManager : MonoBehaviour
 
     public Button[] pieceButton;
     public Button[] pieceEmpty;
+
+    public Text textPuzzle;
 
     //Genera 4 valores random distintos entre ellos
     int randomPiece1;
@@ -270,6 +276,8 @@ public class MinigameManager : MonoBehaviour
             clothCounter = 0; //Lo igualamos a 0 para que no entre en el bucle más veces
 
             timeAlertClothes = timeAlerts;
+
+            textCloth.text = "Mira cielo, me tengo que ir a trabajar pero me he dejado dos lavadoras tendidas, te importa si te quedas… y en cuanto estén secas me las recoges que parece que por la tarde llueve? ";
         }
 
         //TIMER
@@ -300,6 +308,7 @@ public class MinigameManager : MonoBehaviour
 
             timeAlertLights = timeAlerts;
             RandomLights();
+            textLights.text = "Socorro Noah se ha ido la luz en mi casa, no funciona ni la nevera. ";
         }
 
         //TIMER
@@ -332,6 +341,7 @@ public class MinigameManager : MonoBehaviour
 
             GetRandom(0, piece.Length);
             timeAlertPuzzle = timeAlerts;
+            textLights.text = "Bueno verás, estaba haciendo un puzzle y soy incapaz de acabarlo, no sé si cada vez es que estoy más torpe o simplemente peor de la vista. ";
         }
 
         //TIMER

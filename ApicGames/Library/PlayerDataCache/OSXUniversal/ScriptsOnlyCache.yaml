@@ -95,15 +95,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13048}
     - Class: 114
-      Script: {instanceID: 13398}
+      Script: {instanceID: 13400}
     - Class: 114
-      Script: {instanceID: 13714}
+      Script: {instanceID: 13716}
     - Class: 114
-      Script: {instanceID: 13818}
+      Script: {instanceID: 13820}
     - Class: 114
-      Script: {instanceID: 14116}
+      Script: {instanceID: 14118}
     - Class: 114
-      Script: {instanceID: 14436}
+      Script: {instanceID: 14438}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -158,13 +158,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13048}
     - Class: 114
-      Script: {instanceID: 13746}
+      Script: {instanceID: 13748}
     - Class: 114
-      Script: {instanceID: 13818}
+      Script: {instanceID: 13820}
     - Class: 114
-      Script: {instanceID: 14116}
+      Script: {instanceID: 14118}
     - Class: 114
-      Script: {instanceID: 14436}
+      Script: {instanceID: 14438}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -221,19 +221,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13048}
     - Class: 114
-      Script: {instanceID: 13398}
+      Script: {instanceID: 13400}
     - Class: 114
-      Script: {instanceID: 13416}
+      Script: {instanceID: 13418}
     - Class: 114
-      Script: {instanceID: 13714}
+      Script: {instanceID: 13716}
     - Class: 114
-      Script: {instanceID: 13818}
+      Script: {instanceID: 13820}
     - Class: 114
-      Script: {instanceID: 14096}
+      Script: {instanceID: 14098}
     - Class: 114
-      Script: {instanceID: 14116}
+      Script: {instanceID: 14118}
     - Class: 114
-      Script: {instanceID: 14436}
+      Script: {instanceID: 14438}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -304,23 +304,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13108}
     - Class: 114
-      Script: {instanceID: 13208}
+      Script: {instanceID: 13158}
     - Class: 114
-      Script: {instanceID: 13398}
+      Script: {instanceID: 13210}
     - Class: 114
-      Script: {instanceID: 13714}
+      Script: {instanceID: 13400}
     - Class: 114
-      Script: {instanceID: 13818}
+      Script: {instanceID: 13716}
     - Class: 114
-      Script: {instanceID: 14116}
+      Script: {instanceID: 13820}
     - Class: 114
-      Script: {instanceID: 14302}
+      Script: {instanceID: 14118}
     - Class: 114
-      Script: {instanceID: 14324}
+      Script: {instanceID: 14304}
     - Class: 114
-      Script: {instanceID: 14436}
+      Script: {instanceID: 14326}
     - Class: 114
-      Script: {instanceID: 16520}
+      Script: {instanceID: 14438}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -660,7 +660,7 @@ ScriptsOnlyBuild:
     className: clickAlerts
   - hash:
       serializedVersion: 2
-      Hash: ffae999b628d438e065b5bf00c312de3
+      Hash: 30d522c9e7d498b3318f71390f5e61d7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MinigameManager
@@ -688,6 +688,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Timer
+  - hash:
+      serializedVersion: 2
+      Hash: 12fa64eb216bb123f8a02f3309b2c3f7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BlinkingObject
   - hash:
       serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
@@ -922,12 +928,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 12fa64eb216bb123f8a02f3309b2c3f7
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: BlinkingObject
   platform: 2
   scenePathNames:
   - Assets/Scenes/Main_menu.unity
@@ -935,4 +935,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Main_scene.unity
   - Assets/Scenes/Eviction_scene.unity
   playerPath: /Users/aliciamartinez/Desktop/1_MASTER/1.2 - Arte y Videojuegos/Apicgames
-    Local/07_Builds/evictiont_mac_012app.app
+    Local/07_Builds/evictiont_mac_03.app

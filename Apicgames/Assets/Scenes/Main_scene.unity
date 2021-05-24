@@ -6846,6 +6846,7 @@ MonoBehaviour:
   - {fileID: 53625100}
   alertCloth: {fileID: 377696411}
   mgCloth: {fileID: 5500769654297343986}
+  textCloth: {fileID: 426108285}
   lights:
   - {fileID: 1444724917}
   - {fileID: 273858019}
@@ -6855,6 +6856,7 @@ MonoBehaviour:
   - {fileID: 1784683347}
   alertLights: {fileID: 559875374}
   mgLights: {fileID: 5500769655005288812}
+  textLights: {fileID: 1578056177}
   piece:
   - {fileID: 576008883408738143}
   - {fileID: 639244417}
@@ -6888,6 +6890,7 @@ MonoBehaviour:
   - {fileID: 817383021}
   - {fileID: 591127159}
   - {fileID: 208613022}
+  textPuzzle: {fileID: 1077429538}
   light_active: 000000000000
   btn_up:
   - {fileID: 21300000, guid: eba4700a672af48d3a71b72c54754696, type: 3}
@@ -11368,6 +11371,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 67850410621193112, guid: 027ec9b6d616d4044a7ff33bb0117d39,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 67850410621193112, guid: 027ec9b6d616d4044a7ff33bb0117d39,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 67850410621193112, guid: 027ec9b6d616d4044a7ff33bb0117d39,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 67850410621193112, guid: 027ec9b6d616d4044a7ff33bb0117d39,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.12
       objectReference: {fileID: 0}
@@ -11428,10 +11446,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 67850410621193115, guid: 027ec9b6d616d4044a7ff33bb0117d39,
         type: 3}
+      propertyPath: m_Size.x
+      value: 2.6205504
+      objectReference: {fileID: 0}
+    - target: {fileID: 67850410621193115, guid: 027ec9b6d616d4044a7ff33bb0117d39,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 4.9700003
+      objectReference: {fileID: 0}
+    - target: {fileID: 67850410621193115, guid: 027ec9b6d616d4044a7ff33bb0117d39,
+        type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 9175601506825324995, guid: 3d9f127f5c1d1463381725973ed942d3,
+      objectReference: {fileID: -8296082845295926450, guid: 2f8bd6e81ddbe43a693032262458d284,
         type: 3}
+    - target: {fileID: 67850410621193115, guid: 027ec9b6d616d4044a7ff33bb0117d39,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 67850410621193118, guid: 027ec9b6d616d4044a7ff33bb0117d39,
         type: 3}
       propertyPath: posX1

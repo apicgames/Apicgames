@@ -20,7 +20,7 @@ public class TypeWriterEffect : MonoBehaviour
 		btnclose.onClick.AddListener(completeText);
 	}
 
-	IEnumerator ShowText()
+    IEnumerator ShowText()
 	{
 		for (int i = 0; i < fullText.Length; i++)
 		{
